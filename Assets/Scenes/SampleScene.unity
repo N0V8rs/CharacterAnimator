@@ -30079,7 +30079,11 @@ PrefabInstance:
     - target: {fileID: 7784663445864070850, guid: c9a93ec6d36d33340bb7f79a1ae9f9e9, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 528ad3b99c8081f4bb5fab4533138678, type: 3}
+      objectReference: {fileID: 1437570755, guid: b2c8edf6ed5dcc2488380dca5042e01c, type: 3}
+    - target: {fileID: 7784663445864070850, guid: c9a93ec6d36d33340bb7f79a1ae9f9e9, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7784663445864070850, guid: c9a93ec6d36d33340bb7f79a1ae9f9e9, type: 3}
       propertyPath: m_SortingLayer
       value: 0
@@ -30116,6 +30120,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3372830330739237274, guid: c9a93ec6d36d33340bb7f79a1ae9f9e9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 955496175}
+    - targetCorrespondingSourceObject: {fileID: 3372830330739237274, guid: c9a93ec6d36d33340bb7f79a1ae9f9e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 955496180}
   m_SourcePrefab: {fileID: 100100000, guid: c9a93ec6d36d33340bb7f79a1ae9f9e9, type: 3}
 --- !u!1 &955496169 stripped
 GameObject:
@@ -30134,7 +30141,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916c7c17daced114cbcd3d542d79206d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.1
+  speed: 3
+  rb: {fileID: 955496182}
+--- !u!95 &955496180
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955496169}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c2e62666169a63441ae397b3fef12ddc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!50 &955496182 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 8350531720542185675, guid: c9a93ec6d36d33340bb7f79a1ae9f9e9, type: 3}
+  m_PrefabInstance: {fileID: 354337915}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1248145201
 GameObject:
   m_ObjectHideFlags: 0
@@ -72173,5 +72207,5 @@ Tilemap:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 354337915}
   - {fileID: 1248145203}
+  - {fileID: 354337915}
